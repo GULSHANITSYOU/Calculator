@@ -64,3 +64,22 @@ form input.equal {
 form input.opretor {
   color: aqua;
 }
+
+
+@media (max-width:375px) { 
+  .calculator{
+   height: 100%;
+   padding: 10px ;
+
+  }
+}
+
+@media (max-width:640px) { 
+  .calculator{
+   height: 100%;
+   padding: 10px ;
+
+  }
+}
+
+
