@@ -12,12 +12,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.9s;
 }
 
 .calculator {
   background-color: #3a4452;
   padding: 20px;
   border-radius: 10px;
+  transition: 0.9s;
 }
 
 .calculator h3 {
@@ -36,7 +38,7 @@
   border-radius: 10px;
   box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),
     2px 2px 15px rgba(89, 86, 86, 0.2);
-  background: transparent;
+   background: transparent;
   font-size: 20px;
   color: #fff;
   cursor: pointer;
@@ -47,6 +49,11 @@
   display: flex;
   justify-content: flex-end;
   margin: 20px 0;
+}
+#btn {
+  width: 80px;
+  background-color: #a4e949;
+  font-weight: 700;
 }
 
 form .Display input {
