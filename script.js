@@ -1,20 +1,21 @@
-const getcolor = () => {
-    let randomNumber = Math.floor( Math.random() *1677725); 
-    let randomCode = "#" + randomNumber.toString(16) ; 
-    const theam = document.getElementById("container") ;
-    theam.style.backgroundColor = randomCode ;  
-    randomNumber = Math.floor( Math.random() *1677725); 
-    randomCode = "#" + randomNumber.toString(16) ; 
-    const theam2 = document.getElementById("con") ;
-    theam2.style.backgroundColor = randomCode ;  
+const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
+
+const btn  = document.getElementById("#btn" ) ;
+const con = document.getElementById("#con") ; 
+const cnt = document.getElementById("#container") ; 
+
+btn.addEventListener("click" , function() {
+    let hexColor = '#' ; 
+
+    for(let i = 0  ; i<6 ; i++ ){
+        hexColor += hex[getRandomNumber()] ; 
+    }
+
+    con.style.backgroundColor = hexColor ; 
+    cnt.style.backgroundColor  = hexColor ; 
+}); 
+
+
+function getRandomNumber() {
+    return Math.floor(Math.random() * hex.length) ; 
 }
-
-
-const getcolor2 = () => {
-   
-   
-}
-
-document.getElementById("btn").addEventListener("click" , getcolor) ; 
-
-getcolor() ; 
